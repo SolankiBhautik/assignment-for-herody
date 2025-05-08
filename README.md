@@ -9,16 +9,20 @@ Follow these steps to get the project up and running:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/SolankiBhautik/assignment-for-herody
-cd assignment-for-herody
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 ```
 
 ### 2. Install Dependencies
 
-Make sure you have Composer installed, then run:
+Make sure you have Composer and Node.js/npm installed, then run:
 
 ```bash
+# Install PHP dependencies
 composer install
+
+# Install JavaScript dependencies
+npm install
 ```
 
 ### 3. Setup Environment
@@ -62,7 +66,19 @@ php artisan migrate --seed
 
 This will create the tables and seed the database with real book and author data.
 
-### 6. Start the Local Development Server
+### 6. Compile Assets
+
+Compile the frontend assets (including Tailwind CSS):
+
+```bash
+# For development
+npm run dev
+
+# For production
+npm run build
+```
+
+### 7. Start the Local Development Server
 
 ```bash
 php artisan serve
